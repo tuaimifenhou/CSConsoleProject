@@ -240,35 +240,9 @@ namespace ConsoleApp1
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            List<int> lst = new List<int>();
-            lst.Add(1);
-            lst.Add(2);
-            lst.Add(3);
-            
-            List<Person> people = new List<Person>();
-            people.Add(new Chinese());
-            people.Add(new Japanese());
-            people.Add(new American());
-
-            Console.WriteLine(people.Count);
-            Console.WriteLine("------------------------------------");
-
-            Dictionary<int,string> dic = new Dictionary<int,string>();
-            dic.Add(1, "toto");
-            //dic.Add(1, "titi"); //RT exception!!!
-            dic[2] = "titi";
-            dic[2] = "tata"; // no exception, will erase orignal value
-            Console.WriteLine(dic[2]); //tata
-
-            foreach(KeyValuePair<int,string> kv in dic)
-            {
-                Console.WriteLine("{0}-----{1}", kv.Key, kv.Value);
-            }
-
-   
-            Console.ReadKey();
+            Console.WriteLine("Hello World!");
         }
     }
 }
